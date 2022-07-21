@@ -1,0 +1,105 @@
+/* Todo */
+
+#add-task {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  z-index: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--todo-secondary-color);
+  cursor: pointer;
+}
+
+#add-task::after,
+#add-task::before {
+  position: absolute;
+  content: '';
+  display: block;
+  border-radius: 4px;
+  width: 40%;
+  height: 3px;
+  background-color: var(--todo-strong-green);
+}
+
+#add-task::before {
+  transform: rotate(90deg);
+}
+
+#todo {
+  display: block;
+  width: 100%;
+  height: calc((100% - 72px) - 80px);
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: .5rem;
+  height: 100%;
+}
+
+#todo-list li {
+  display: grid;
+  padding: .5rem;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  font-family: var(--todo-primary-font);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: .5rem;
+  color: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#todo-list li:hover {
+  background: rgba(0, 0, 0, .3);
+}
+
+#todo-list li[data-todo-status="check"] {
+  color: var(--todo-disabled-color);
+  text-decoration: line-through;
+  text-decoration-color: var(--todo-primary-color);
+  opacity: .6;
+}
+
+#todo-list i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#todo-list li[data-todo-status="uncheck"] i {
+  background-image: url(../../images/icons/Unchecked.svg);
+}
+
+#todo-list li[data-todo-status="check"] i {
+  background-image: url(../../images/icons/Checked.svg);
+}
+
+#todo-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+#todo-list::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}

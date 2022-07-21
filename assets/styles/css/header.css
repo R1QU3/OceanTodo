@@ -1,0 +1,36 @@
+/* Header Todo */
+
+#header-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: var(--todo-primary-font);
+  font-weight: 600;
+  padding: 1rem;
+  color: #FFFFFF;
+}
+
+#date-infos {
+  display: inline-flex;
+  gap: 15px;
+}
+
+#date-infos [data-date-number-day] {
+  font-size: 3rem;
+}
+
+#date-infos [data-date-mounth], #date-infos [data-date-year] {
+  font-size: 1rem;
+}
+
+#header-todo [data-date-day] {
+  font-size: 1.5rem;
+}
+
+#date-infos div {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}

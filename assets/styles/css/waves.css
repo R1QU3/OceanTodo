@@ -1,1 +1,124 @@
-.wave{position:absolute;display:block;width:200vw;height:5%;filter: blur(5px);}.wave img{width:100%}#wave-1{left:0;bottom:0;animation:waveMoveRight 25s infinite}#wave-2{right:0;bottom:5%;z-index:-1;animation:waveMoveLeft 25s infinite}#wave-3{left:0;bottom:10%;z-index:-2;animation:waveMoveRight 25s infinite}#wave-4{right:0;bottom:15%;z-index:-3;animation:waveMoveLeft 25s infinite}#wave-5{left:0;bottom:20%;z-index:-4;animation:waveMoveRight 25s infinite}#wave-6{right:0;bottom:25%;z-index:-5;animation:waveMoveLeft 25s infinite}#wave-7{left:0;bottom:30%;z-index:-6;animation:waveMoveRight 25s infinite}#wave-8{right:0;bottom:35%;z-index:-7;animation:waveMoveLeft 25s infinite}#wave-9{left:0;bottom:40%;z-index:-8;animation:waveMoveRight 25s infinite}#wave-10{right:0;bottom:45%;z-index:-9;animation:waveMoveLeft 25s infinite}@keyframes waveMoveRight{50%{left:-200px}100%{left:0}}@keyframes waveMoveLeft{50%{right:-200px}100%{right:0}}
+.wave {
+  position: absolute;
+  display: block;
+  width: 200vw;
+  height: 5%;
+  filter: blur(2px);
+}
+
+.wave img {
+  width: 100%
+}
+
+[id^="wave"]:nth-child(odd) {
+  animation: waveMoveRight 25s infinite;
+}
+
+[id^="wave"]:nth-child(even) {
+  animation: waveMoveLeft 25s infinite;
+}
+
+#wave-1 {
+  left: 0;
+  bottom: 0;
+}
+
+#wave-2 {
+  right: 0;
+  bottom: 5%;
+  z-index: -1;
+}
+
+#wave-3 {
+  left: 0;
+  bottom: 10%;
+  z-index: -2;
+}
+
+#wave-4 {
+  right: 0;
+  bottom: 15%;
+  z-index: -3;
+}
+
+#wave-5 {
+  left: 0;
+  bottom: 20%;
+  z-index: -4;
+}
+
+#wave-6 {
+  right: 0;
+  bottom: 25%;
+  z-index: -5;
+}
+
+#wave-7 {
+  left: 0;
+  bottom: 30%;
+  z-index: -6;
+}
+
+#wave-8 {
+  right: 0;
+  bottom: 35%;
+  z-index: -7;
+}
+
+#wave-9 {
+  left: 0;
+  bottom: 40%;
+  z-index: -8;
+}
+
+#wave-10 {
+  right: 0;
+  bottom: 45%;
+  z-index: -9;
+}
+
+@keyframes waveMoveRight {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: -200px
+  }
+
+  100% {
+    left: 0
+  }
+}
+
+@keyframes waveMoveLeft {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    right: -200px
+  }
+
+  100% {
+    right: 0
+  }
+}
+
+@media (max-width: 992px) {
+  .wave {
+    width: 300vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .wave {
+    width: 400vw;
+  }
+}
+
+@media (max-width: 568px) {
+  .wave {
+    width: 600vw;
+  }
+}

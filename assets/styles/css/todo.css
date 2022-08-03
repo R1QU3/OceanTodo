@@ -68,6 +68,7 @@
   text-decoration: line-through;
   text-decoration-color: var(--todo-primary-color);
   opacity: .6;
+  filter: blur(1px);
 }
 
 #todo-list i {

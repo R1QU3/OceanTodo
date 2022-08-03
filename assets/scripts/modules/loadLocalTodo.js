@@ -12,6 +12,7 @@ export default function loadLocalTodo() {
 
         li.setAttribute('data-todo-status', data.todo_status);
         li.setAttribute('data-todo-id', data.todo_id);
+        li.setAttribute('data-aos', "zoom-in-down");
         title.textContent = data.todo_title;
 
         li.appendChild(title);

@@ -21,8 +21,9 @@
 
 body {
   position: relative;
-  /* background-image: url(../../images/background/OceanDarkAnimation.svg);
-  background-size: cover; */
+  background-image: url(../../images/background/OceanDark-2.svg);
+  background-position: center bottom;
+  background-size: cover;
   background-color: #021027;
   overflow: hidden;
 }

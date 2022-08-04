@@ -11,68 +11,58 @@
 }
 
 [id^="wave"]:nth-child(odd) {
-  animation: waveMoveRight 25s infinite;
+  left: 0;
 }
 
 [id^="wave"]:nth-child(even) {
-  animation: waveMoveLeft 25s infinite;
+  right: 0;
 }
 
 #wave-1 {
-  left: 0;
   bottom: 0;
 }
 
 #wave-2 {
-  right: 0;
   bottom: 5%;
   z-index: -1;
 }
 
 #wave-3 {
-  left: 0;
   bottom: 10%;
   z-index: -2;
 }
 
 #wave-4 {
-  right: 0;
   bottom: 15%;
   z-index: -3;
 }
 
 #wave-5 {
-  left: 0;
   bottom: 20%;
   z-index: -4;
 }
 
 #wave-6 {
-  right: 0;
   bottom: 25%;
   z-index: -5;
 }
 
 #wave-7 {
-  left: 0;
   bottom: 30%;
   z-index: -6;
 }
 
 #wave-8 {
-  right: 0;
   bottom: 35%;
   z-index: -7;
 }
 
 #wave-9 {
-  left: 0;
   bottom: 40%;
   z-index: -8;
 }
 
 #wave-10 {
-  right: 0;
   bottom: 45%;
   z-index: -9;
 }

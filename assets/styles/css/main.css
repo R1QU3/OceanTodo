@@ -21,8 +21,12 @@
 
 body {
   position: relative;
-  background-image: url(../../images/background/OceanDark-2.svg);
+  background-image: url(../../images/background/michael-benz-ocean-unsplash.jpg);
+  /* 
+  Photo by Michael Benz on Unsplash
+  */
   background-position: center bottom;
+  backdrop-filter: blur(10px);
   background-size: cover;
   background-color: #021027;
   overflow: hidden;

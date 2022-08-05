@@ -1,3 +1,6 @@
+
+import checkDevice from "./checkDevice.js";
+
 export default function toggleTodoStatus() {
   const todoItems = document.querySelectorAll('#todo-list li');
 
@@ -17,7 +20,13 @@ export default function toggleTodoStatus() {
       this.dataset['todoStatus'] = 'check';
     }
   }
-  todoItems.forEach((todo) => {
-    ['click', 'touchstart'].forEach(userEvent => todo.addEventListener(userEvent, toggleStatus));
-  })
+  if (checkDevice()) {
+    todoItems.forEach((todo) => {
+      todo.addEventListener('touchstart', toggleStatus);
+    })
+  } else {
+    todoItems.forEach((todo) => {
+      todo.addEventListener('click', toggleStatus);
+    })
+  }
 }

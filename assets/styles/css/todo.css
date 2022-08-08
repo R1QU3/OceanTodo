@@ -68,15 +68,12 @@
   background: rgba(0, 0, 0, .3);
 }
 
-#todo-list li[data-todo-status="check"] {
+#todo-list li[data-todo-status="check"] span {
   color: var(--todo-disabled-color);
   text-decoration: line-through;
   text-decoration-color: var(--todo-primary-color);
   opacity: .6;
   filter: blur(1px);
-}
-
-#todo-list li[data-todo-status="check"] span {
   user-select: none;
 }
 

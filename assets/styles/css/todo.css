@@ -76,6 +76,10 @@
   filter: blur(1px);
 }
 
+#todo-list li[data-todo-status="check"] span {
+  user-select: none;
+}
+
 #todo-list i {
   display: block;
   width: 30px;
